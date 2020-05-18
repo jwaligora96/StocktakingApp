@@ -29,8 +29,13 @@ class BarcodeScanningActivity : AppCompatActivity(), ZBarScannerView.ResultHandl
         mScannerView.stopCamera()
     }
 
-    //wyświetlenie zeskanowanego kodu kreskowego
+    //przekazanie zeskanowanego kodu kreskowego do następnej aktywności i uruchomienie jej
     override fun handleResult(result: Result?) {
         Toast.makeText(this, result?.contents, Toast.LENGTH_SHORT).show()
+
+        val intent = Intent(this@BarcodeScanningActivity, HandleBarcodeActivity::class.java).apply {
+            putExtra("barcode", result?.contents)
+        }
+        startActivity(intent)
     }
 }
