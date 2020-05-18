@@ -3,4 +3,12 @@
     <string name="missing_permissions">Brak uprawnień</string>
     <string name="scan_barcode">Zeskanuj kod kreskowy</string>
     <string name="browse_records">Przeglądaj rekordy</string>
+    <string name="barcode">Kod kreskowy</string>
+    <string name="date">Data zeskanowania</string>
+    <string name="name">Nazwa</string>
+    <string name="edit">Edytuj</string>
+    <string name="owner">Właściciel</string>
+    <string name="save">Zapisz</string>
+    <string name="scan_again">Zeskanuj ponownie</string>
+    <string name="back_to_menu">Wróć do menu</string>
 </resources>
